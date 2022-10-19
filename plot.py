@@ -17,7 +17,7 @@ initial_value = int(input())
 result = shared_lib.calculate(initial_value)
 
 # y axis values 
-y = [result[i] for i in range(result[0])]
+y = [result[i] for i in range(1, result[0] + 1)]
 
 # x axis values, based on result size
 x = range(0, len(y))
