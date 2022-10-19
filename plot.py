@@ -1,9 +1,11 @@
 from ctypes import *
 import ctypes
+import os
 import matplotlib.pyplot as plt 
 
 # Getting C library
-so_file = "/Users/fernandakipper/Desktop/projects/clp/shared-lib.so"
+so_file = os.getcwd() + "/shared-lib.so"
+
 shared_lib = CDLL(so_file)
 
 calculateFn = shared_lib.calculate
@@ -32,4 +34,7 @@ plt.ylabel('valor alcançado')
 # giving a title to my graph 
 plt.title('Conjectura de Collatz') 
 # function to show the plot 
-plt.show() 
+plt.show()
+
+#free the allocated memory  for the array
+shared_lib.liberaArray(result)
