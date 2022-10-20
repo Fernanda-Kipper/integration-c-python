@@ -33,6 +33,6 @@ int *calculate(int i){
     return result;
 }
 
-void liberaArray(int* pointer){
+void freeArray(int* pointer){
     free(pointer);
 }

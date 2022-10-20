@@ -22,7 +22,7 @@ result = shared_lib.calculate(initial_value)
 y = [result[i] for i in range(1, result[0] + 1)]
 
 # x axis values, based on result size
-x = range(0, len(y))
+x = [i for i in range(0, len(y))]
 
 # plotting the points  
 plt.plot(x, y) 
@@ -37,4 +37,4 @@ plt.title('Conjectura de Collatz')
 plt.show()
 
 #free the allocated memory  for the array
-shared_lib.liberaArray(result)
+shared_lib.freeArray(result)
