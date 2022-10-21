@@ -2,7 +2,7 @@
 Esse projeto tem o objetivo de mostrar ao usuário o gráfico gerado apartir da Conjectura de Collatz
 que é calculado através do número inicial fornecido pelo usuário.
 
-### Integração C + Python
+### Integração C & Python
 - Na linguagem C, criamos a função na qual é calculado os valores da conjectura a partir do número inicial
 - Esse código foi exportado como uma library com extensão `.so` e para gerar o arquivo `.so` utilizamos o
 próprio GCC
